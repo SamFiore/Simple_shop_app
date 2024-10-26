@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing Up</title>
+    <style>
+        body{
+            background-color: rgb(14, 9, 20);
+        }
+
+        .hidden-label{
+            display: none;
+        }
+
+        .login-container{
+            background-color: black;
+            border-radius: 20px;
+            color: white;
+        }
+
+        .login-container h1{
+            color: rgb(104, 42, 161);
+            text-align: center;
+            /* margin-top: 10px; */
+            padding-top: 10px;
+        }
+
+        .login-container form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .login-container input{
+            height: 50px;
+            width: 200px;
+            margin-bottom: 10px;
+            padding: 5px;
+            border: none;
+            background-color: rgb(104, 42, 161);
+            border-radius: 5px;
+        }
+
+        .login-container input:focus {
+            background-color: rgb(135, 55, 209);
+            outline: none;
+            color: rgb(0, 0, 0);
+        }
+
+        .login-container input::placeholder{
+            color: rgb(55, 0, 105);
+        }
+
+        .login-container form button{
+            height: 40px;
+            width: 100px;
+            background-color: rgb(104, 42, 161);
+            color: rgb(213, 142, 255);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .login-container form button:hover{
+            background-color: rgb(65, 22, 105);
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Sing Up</h1>
+        <form method="POST">
+            {{form}}
+            <button type="submit">Sing Up</button>
+        </form>
+        <script>
+            function formas(form){
+                console.log(form);
+            }
+        </script>
+    </div>
+</body>
+</html>
